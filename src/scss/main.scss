@@ -1,0 +1,113 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+//Vars
+$background: #2F4159;
+$foreground-top: #E07356;
+$foreground-bot: #D6573B;
+$light-bkground: #4A5C74;
+$dark-bkground: #2C3949;
+
+#nav-toggle-state {
+  display: none;
+}
+
+#nav-toggle-state:checked ~ .nav-menu {
+  display: block;
+}
+
+body, html {
+  height: 100%;
+  background:$background;
+}
+#outerbox {
+  width: 100%;
+  position: absolute; /* to place it somewhere on the screen */
+  top: 130px;         /* free space at top */
+  bottom: 0;          /* makes it lock to the bottom */
+  z-index:-1;
+}
+#innerbox {
+  width: 100%;
+  position: absolute;				
+  min-height: 100% !important; /* browser fill */
+  height: auto;                /*content fill */
+  z-index:-1;
+}
+.resultboxSearch{
+	background:#FCF4D9;
+	border:3px solid #00AAA0;
+	padding:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.resultboxSearch.results{
+	border:3px solid #00AAA0;
+}
+.infotext{
+	color:#FFF;	
+  text-align:center;
+  width:100%;
+  font-size:24px;
+  margin-top:25px;
+  margin-bottom:25px;
+  i{
+  font-size:34px;
+  }
+}
+.infotext.infotitle{
+  font-size:34px;
+  font-weight:bold;
+}
+.infotext.left{
+  text-align:left;
+}
+.resultsList{
+  color:#FFF;	
+}
+nav.nav{
+	background:linear-gradient($foreground-top, $foreground-bot);
+	margin-bottom:10px;
+  color: #FFF;
+}
+nav.nav a, nav.nav a:active, nav.nav a:visited, nav.nav a:hover{
+	color: #FFF;
+	text-decoration:none;
+}
+.nav-toggle span {
+    background-color: #FFF;
+}
+.nav-toggle:hover {
+	background-color: #000;
+}
+
+#nav-toggle-state:checked ~ .nav-menu {
+    display: block;
+    background: #000;
+    margin-top: -6px;
+}
+nav h2{
+	margin-bottom:0px;
+}
+
+.result-list:last-child{
+	border:none;
+	margin-bottom:0px;
+}
+.result-list{
+  border-bottom:1px solid #ddd;
+  margin-bottom:10px;
+}
+label.label{
+	margin-top:10px;
+}
+button.btn{
+	width:100%;
+	margin-top:10px;
+}
+h2.logo{
+  font-family: 'Shrikhand', cursive;
+	margin-top:5px;
+}
+span.bold{
+  font-weight:bold;
+}

@@ -1,0 +1,12 @@
+<section>
+  <div class="row">
+    <div class="infotext left col-md-12">
+      <p><span class="bold">{{$ctrl.resultList.length}}</span> Results for <span class="bold">{{$ctrl.searchTerm}}</span></span></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="resultsList col-md-12">
+      <p ng-repeat="results in $ctrl.resultList">{{results.text}} </p>
+    </div>
+  </div>
+</section>

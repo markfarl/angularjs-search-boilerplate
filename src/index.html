@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title ng-bind="pageTitle"></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid ryBkground">
+    <div ng-app="app" ng-strict-di>
+      <ui-view>
+        Loading...
+      </ui-view>
+    </div>
+  </div>
+  <div id="outerbox">
+  <div id="innerbox"></div>
+</div>
+</body>
+</html>
